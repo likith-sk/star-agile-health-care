@@ -1,12 +1,10 @@
 - name: my play to project 2
-  hosts: jos
+  hosts: liki
   become: true
   tasks:
     - name: uupdate repos
       command: apt update
     - name: install docker
       package: name=docker.io state=present
-    - name: docker image
-      command: docker pull luvisjostonj/health:3
     - name: docker con
-      command: docker run -d -p 8888:8082 luvisjostonj/health:3
+      command: docker run -d -p 8888:8082 likith2468/health:1
