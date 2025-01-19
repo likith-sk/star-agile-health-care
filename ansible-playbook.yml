@@ -7,4 +7,4 @@
     - name: install docker
       package: name=docker.io state=present
     - name: docker con
-      command: docker run -d -p 8888:8082 likith2468/health:3
+      command: docker run -d -p 8888:8082 likith2468/health:1
